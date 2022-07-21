@@ -1,3 +1,23 @@
+/*written by manish malhotra
+all function are genric,to make specific remove T wherever are present
+for int type of graph you can use vector<bool>vis(V,false) instead of unordered_map
+for local creation of adjacency list ,of int type of node is very simple
+
+  //make array of vector<int>;
+  vector<int>adj[V];
+  //m is numbers of edges
+  for(int i=0;i<m;i++){
+      int u,int v;
+      u=edges[i][0];
+      v=edges[i][1];
+      if directed then 
+      adj[u].push_back(v);
+      else
+      adj[u].push_back(v);
+      adj[v].push_back(u);
+  }
+
+*/
 #include<bits/stdc++.h>
 using namespace std;
 template <class T>
@@ -182,7 +202,6 @@ template <class T> void Graph<T>:: printGraph(){
 			}cout<<endl;
     }
 }
-
 
 int main(){
     //Graph<string> g;
