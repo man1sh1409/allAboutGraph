@@ -37,13 +37,13 @@ class Graph{
          }
     }
     void printGraph();
-	void dfsTraversal(T node,unordered_map<T,bool>&vis);	
-	void bfsTraversal(T node,unordered_map<T,bool>&vis);
-	bool cycleIndirectedGraphUsingDfs(T node,unordered_map<T,bool>&vis,unordered_map<T,bool>&dfsVis);
-	bool cycleInUndirectedGraphUsingDfs(T node,unordered_map<T,bool>&vis,T parent);
-	vector<T> topologicalSort(int v);
-	vector<T> topologicalSortUsingBfs(int v);
-	vector<T> shortestPathUsingBfs(T src,T dest);
+    void dfsTraversal(T node,unordered_map<T,bool>&vis);	
+    void bfsTraversal(T node,unordered_map<T,bool>&vis);
+    bool cycleIndirectedGraphUsingDfs(T node,unordered_map<T,bool>&vis,unordered_map<T,bool>&dfsVis);
+    bool cycleInUndirectedGraphUsingDfs(T node,unordered_map<T,bool>&vis,T parent);
+    vector<T> topologicalSort(int v);
+    vector<T> topologicalSortUsingBfs(int v);
+    vector<T> shortestPathUsingBfs(T src,T dest);
 	
 };
 
@@ -202,6 +202,7 @@ template <class T> void Graph<T>:: printGraph(){
 			}cout<<endl;
     }
 }
+
 
 int main(){
     //Graph<string> g;
