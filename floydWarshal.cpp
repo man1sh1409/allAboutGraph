@@ -37,7 +37,7 @@ int main(){
                 cout<<-1<<" ";
             }
             else{
-                cout<<dis[i]<<" ";
+                cout<<dis[i][j]<<" ";
             }
         }cout<<endl;
     	  
